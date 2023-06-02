@@ -1,0 +1,252 @@
+/*--website styles--*/
+* {
+    font-size: 16px;
+    letter-spacing: 2px;
+    cursor: default;
+}
+
+body {
+    font-family: 'Gloock', 'Xanh Mono', serif;
+    position: relative;
+    top: 100px;
+}
+
+.divider {
+    display: block;
+    align-items: center;
+    border: 1px solid black;
+    margin: 50px;
+}
+/*--Header--*/
+
+.banner {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    border-bottom: 1px solid black;
+    margin: 0;
+    padding: 0;
+    left: 0;
+    background-color: white;
+}
+
+h1 {
+    font-family: 'Gloock', serif;
+    font-size: 32px;
+    display: block;
+    padding-left: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+    padding: 0px 30px;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    color: green;
+    text-decoration: none;
+}
+
+a:visited {
+    color: green;
+}
+
+a:hover {
+    color: green;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+a:active {
+    color: teal;
+}
+
+/*--mission statement--*/
+
+.mission-statement {
+    background-image: url(https://static.vecteezy.com/system/resources/previews/004/733/679/original/abstract-army-camouflage-seamless-pattern-free-vector.jpg);
+    display: block;
+    text-align: center;
+    color: white;
+    padding: 100px 0;
+    width: 100%;
+}
+
+.mission-statement h2 {
+    font-size: 28px;
+    text-decoration: underline;
+}
+
+.mission-statement p {
+    font-family: 'Xanh Mono';
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/*--gallery--*/
+
+.gallery {
+    text-align: center;
+    width: 100%;
+    position: relative;
+}
+
+.gallery-title {
+    display: block;
+    position:static;
+    justify-content: center;
+    margin: 50px;
+}
+
+.grid {
+    display: grid;
+    position: relative;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 30px 10px;
+    grid-auto-rows: auto;
+    grid-auto-columns: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.a {
+    grid-area: 2 / 1 / span 1 /  span 1;
+}
+
+.b {
+    grid-area: 2 / 2 / span 1 / span 1;
+}
+
+.c {
+    grid-area: 2 / 3 / span 1 / span 1;
+}
+
+.gallery-container {
+    display: flex;
+    justify-content: space-around;
+    background-color: lightgrey;
+    padding: 50px 0;
+    margin: 0;
+    flex-flow: row wrap;
+    min-width: 600px;
+}
+
+.image-container {
+    width: 25%;
+}
+
+img {
+    width: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.top-side, 
+.top-middle,
+.bottom-side {
+    flex-flow: column wrap;
+}
+
+/*--company employees--*/
+
+.company-employees {
+    display: block;
+}
+
+.company-employees h2 {
+    text-align: center;
+}
+
+.employee-container {
+    display: flex;
+    width: 100%;
+    text-align: center;
+    background-color: lightgray;
+    justify-content: space-around;
+}
+
+.employee-box {
+    width: 20%;
+    padding: 20px;
+}
+
+/*--contact-info--*/
+
+.contact-info {
+    font-family: 'Gloock', serif;
+    display: block;
+    text-align: center;
+    background-color: lightgrey;
+    padding: 20px;
+    line-height: 20px;
+    font-weight: 400;
+}
+
+/*--fonts--*/
+/* cyrillic-ext */
+@font-face {
+    font-family: 'Gloock';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/gloock/v1/Iurb6YFw84WUY4NJhRakNrc.woff2) format('woff2');
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+  }
+  /* latin-ext */
+  @font-face {
+    font-family: 'Gloock';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/gloock/v1/Iurb6YFw84WUY4NJhhakNrc.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+  /* latin */
+  @font-face {
+    font-family: 'Gloock';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/gloock/v1/Iurb6YFw84WUY4NJiBak.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  /* vietnamese */
+  @font-face {
+    font-family: 'Xanh Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/xanhmono/v17/R70YjykVmvKCep-vWhSokAqRbzI.woff2) format('woff2');
+    unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+  }
+  /* latin-ext */
+  @font-face {
+    font-family: 'Xanh Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/xanhmono/v17/R70YjykVmvKCep-vWhSokQqRbzI.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+  /* latin */
+  @font-face {
+    font-family: 'Xanh Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/xanhmono/v17/R70YjykVmvKCep-vWhSonwqR.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
